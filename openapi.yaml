@@ -1,0 +1,22 @@
+openapi: 3.0.3
+info:
+  title: API Gateway API
+  version: 1.0.0
+  description: Edge gateway: routing, auth, and rate limiting for all public APIs.
+servers:
+  - url: https://api.adaptive-labs.example/api-gateway
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        '200': { description: OK }
+  /api-gateway:
+    get:
+      summary: List api gateway resources
+      responses:
+        '200': { description: A list of resources }
+    post:
+      summary: Create a api gateway resource
+      responses:
+        '201': { description: Created }

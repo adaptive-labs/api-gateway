@@ -1,18 +1,19 @@
-# hello-service
+---
+category: architecture
+title: API Gateway — Architecture
+description: Edge gateway: routing, auth, and rate limiting for all public APIs.
+related_teams:
+  - platform
+---
 
-hello-service
+# API Gateway
 
-## Getting Started
+Edge gateway: routing, auth, and rate limiting for all public APIs.
 
-```bash
-go build -o hello-service .
-./hello-service
-```
+## Overview
 
-## Development
+`api-gateway` is a api owned by the Platform team. It runs in production as a tier-critical service.
 
-```bash
-make build
-make test
-make lint
-```
+## Dependencies
+
+No upstream service dependencies of note.

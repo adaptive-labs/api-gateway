@@ -1,0 +1,24 @@
+schemaVersion: 1
+service:
+  id: api-gateway
+  name: API Gateway
+  type: api
+  tier: critical
+  description: 'Edge gateway: routing, auth, and rate limiting for all public APIs.'
+lifecycle: production
+tags:
+- adaptive-labs
+- platform
+owner:
+- type: team
+  id: platform
+interfaces:
+  http:
+    baseUrl: https://api.adaptive-labs.example/api-gateway
+    openapi: ./openapi.yaml
+    version: 1.0.0
+links:
+- name: Runbook
+  url: ./docs/runbook.md
+- name: Onboarding
+  url: ./docs/onboarding.md
