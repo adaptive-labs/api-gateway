@@ -16,4 +16,5 @@ Edge gateway: routing, auth, and rate limiting for all public APIs.
 
 ## Dependencies
 
-No upstream service dependencies of note.
+It talks to:
+- `auth-proxy`

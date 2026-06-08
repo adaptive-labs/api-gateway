@@ -17,6 +17,9 @@ interfaces:
     baseUrl: https://api.adaptive-labs.example/api-gateway
     openapi: ./openapi.yaml
     version: 1.0.0
+relations:
+- type: depends_on
+  target: service:auth-proxy
 links:
 - name: Runbook
   url: ./docs/runbook.md
